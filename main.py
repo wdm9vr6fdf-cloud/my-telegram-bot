@@ -70,7 +70,7 @@ async def process_time(message: types.Message, state: FSMContext):
     await message.answer(customer_text)
     
     # Отправляем тебе (замените CHAT_ID на свой числовой ID чата)
-    await bot.send_message(chat_id=@pisalnasavinova, text=admin_text)
+    await bot.send_message(chat_id=7327512347, text=admin_text)
     
     await state.clear()
 
