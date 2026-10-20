@@ -5,7 +5,8 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 
 TOKEN = os.getenv("BOT_TOKEN")
-bot = Bot(token=8950986190:AAE_Ng4gwIgpHRIFBWIYvzub4BKfbaWgJN0)
+bot = Bot(token=TOKEN)
+
 dp = Dispatcher()
 
 class OrderForm(StatesGroup):
