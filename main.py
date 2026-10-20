@@ -4,7 +4,7 @@ from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 
-TOKEN = os.getenv("8950986190:AAE_Ng4gwIgpHRIFBWIYvzub4BKfbaWgJN0")
+TOKEN = os.getenv(8950986190:AAE_Ng4gwIgpHRIFBWIYvzub4BKfbaWgJN0)
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
