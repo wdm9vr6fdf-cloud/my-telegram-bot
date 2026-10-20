@@ -19,7 +19,7 @@ async def cmd_start(message: types.Message, state: FSMContext):
     await state.set_state(OrderForm.waiting_for_product)
     await message.answer(
         "👋 Привет! Сейчас я соберу твой заказ.\n\n"
-        "Шаг 1: Напиши название товара (например, «Babki»).\n"
+        "Шаг 1: Напиши название товара (название банки из канала, если больше одной указывать все в одном сообщение).\n"
         "Я подскажу следующий шаг."
     )
 
@@ -30,7 +30,7 @@ async def process_product(message: types.Message, state: FSMContext):
     await state.set_state(OrderForm.waiting_for_place)
     await message.answer(
         f"✅ Товар: {product}\n\n"
-        "Шаг 2: Напиши место встречи (например, «Цига»)."
+        "Шаг 2: Напиши место встречи (например, «улица Красина,8»). А следущим сообщением время (18:00)"
     )
 
 @dp.message(OrderForm.waiting_for_place)
